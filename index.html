@@ -15,10 +15,13 @@
 		<script src="js/jquery.scrolly.min.js"></script>
 		<script src="js/skel.min.js"></script>
 		<script src="js/init.js"></script>
+		<script src="js/jquery-1.11.0.min.js"></script>
+		<script src="js/lightbox.min.js"></script>
 		<noscript>
 			<link rel="stylesheet" href="css/skel.css" />
 			<link rel="stylesheet" href="css/style.css" />
 			<link rel="stylesheet" href="css/style-desktop.css" />
+			<link href="css/lightbox.css" rel="stylesheet" />
 		</noscript>
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
@@ -29,8 +32,9 @@
 			<nav id="nav">
 				<ul class="container">
 					<li><a href="#home">Home</a></li>
-					<li><a href="#info">About</a></li>
-					<!--<li><a href="#portfolio">Portfolio</a></li>-->
+					<li><a href="#info">Overview</a></li>
+					<li><a href="#registration">Registration</a></li>
+					<li><a href="#companies">Companies</a></li>
 					<li><a href="#contact">Contact</a></li>
 				</ul>
 			</nav>
@@ -40,7 +44,7 @@
 				<article class="container" id="home">
 					<div class="row">
 						<div class="4u">
-							<span class="image fit"><img src="images/img01.jpg" alt="" /></span>
+							<span class="image fit"><a href="images/img01.jpg" data-lightbox="image-1" data-title="My Caption"><img src="images/img01.jpg" alt="" /></a></span>
 						</div>
 						<div class="8u">
 							<header>
@@ -57,7 +61,7 @@
 			<div class="wrapper style2">
 				<article id="info">
 					<header>
-						<h2>About the event.</h2>
+						<h2>Overview of the Event</h2>
 						<p>Think Engineering is an annual networking event organized and hosted by the IEEE Student Branches at UBC, SFU, and BCIT in conjunction with the UBC Electrical and Computer Engineering Student Society. Our aim is to connect and engage students in Greater Vancouver with industry representatives.</p>
 					</header>
 					<div class="container">
@@ -88,16 +92,31 @@
 					<footer>
 						<p>Get your tickets from the UBC IEEE office MCLD 319; ticket sales end Friday Jan 23rd.<br>Extra details can go here. By the way have any of you seen <a href="http://www.ieeeubc.org/" target="_blank">http://www.ieeeubc.org/</a><br>We Lost our URL... I blame Tommy.<p>
 					</footer>
+					<a href="#registration" class="button scrolly">How do I register?</a>
+				</article>
+			</div>
+
+		<!-- Registration -->
+			<div class="wrapper style2">
+				<article id="registration">
+					<h2>Registration</h2>	
+					<strong>UBC students</strong><br>
+					Register at MCLD 319 (IEEE Office) or MCLD 434 (ECESS Office) or email ieee@ece.ubc.ca<br><br>
+					<strong>SFU students</strong><br>
+					Tanjila Farah (Burnaby Campus): tfarah@sfu.ca<br>
+					Alireza Dibaienia (Surrey Campus): adibaien@sfu.ca<br><br>
+					<strong>BCIT students</strong><br>
+					Please email b.bcit@ieee.org<br>
 				</article>
 			</div>
 
 
-		<!-- Portfolio Taken Out
+		<!-- Companies -->
 			<div class="wrapper style3">
-				<article id="portfolio">
+				<article id="companies">
 					<header>
-						<h2>Here’s some stuff I made recently.</h2>
-						<p>Proin odio consequat  sapien vestibulum consequat lorem dolore feugiat lorem ipsum dolore.</p>
+						<h2>Companies</h2>
+						<p>Learn about each company attending Think Engineering 2015. The companies are here to get to know you, and for you to get to know them! This is a great opportunity to build professional relationships with managers and employers.</p>
 					</header>
 					<div class="container">
 						<div class="row">
@@ -153,7 +172,6 @@
 					</footer>
 				</article>
 			</div>
--->
 
 		<!-- Contact -->
 			<div class="wrapper style4">
