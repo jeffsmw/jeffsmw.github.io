@@ -594,7 +594,7 @@
 
 	.wrapper
 	{
-		background-image: url('images/bg.png');
+		background-image: none;
 		box-shadow: inset 0px 1px 0px 0px rgba(0,0,0,0.05), inset 0px 2px 3px 0px rgba(0,0,0,0.1);
 	}
 
@@ -611,6 +611,7 @@
 		
 		.wrapper.style2
 		{
+			background-image: url(images/bg.png);
 			background-color: #fafafa;
 			text-shadow: 1px 1px 0px #fff;
 		}
@@ -627,7 +628,6 @@
 			color: #999;
 			text-shadow: -1px -1px 0px #181818;
 		}
-
 			.wrapper.style4 h1, 
 			.wrapper.style4 h2, 
 			.wrapper.style4 h3, 
@@ -764,10 +764,19 @@
 /*************************************************/
 /* Added by jsmw
 /*************************************************/
-#enclosure
+#enclosureb
 {
 
 	margin-right:10%;
 	margin-left:10%;
 	max-width:2000px; /*subject to change */
+}
+
+#enclosure
+{
+
+	max-width:2000px; /*subject to change */
+	font-size:24px;
+	margin-right:10%;
+	margin-left:10%;
 }
