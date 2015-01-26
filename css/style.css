@@ -120,7 +120,7 @@
 
 		a:hover
 		{
-			color: #E27689;
+			color: #00a0c8; /*edit*/
 			border-bottom-color: rgba(255,255,255,0);
 		}
 
@@ -671,7 +671,7 @@
 
 							#nav ul li a.active span:before
 							{
-								color: #e27689;
+								color: #00a0c8; /*edit*/
 							}
 
 /*********************************************************************************/
@@ -783,3 +783,19 @@
 			{
 				background-color: #e8edec;
 			}
+
+
+
+/*********************************************************************************/
+/* Custom                                                                        */
+/*********************************************************************************/
+.breadcrumb {
+	color:  #aaaaaa;
+}
+
+.breadcon {
+	font-size: medium;
+.breadcon a:hover {
+	color: #00a0c8;
+	border-bottom-color: rgba(255,255,255,0);
+}
