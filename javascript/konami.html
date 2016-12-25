@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Konami</title>
+  </head>
+  <body>
+    <h1>up up down down left right left right B A<h1>
+
+    <script>
+      const pressed = [];
+      const konami = "38384040373937396665";
+
+      window.addEventListener('keyup', (e) => {
+        pressed.push(e.keyCode);
+        pressed.splice(-konami.length/2 - 1, pressed.length - konami.length/2);
+        if (pressed.join('').includes(konami)) {
+          alert('Konami!');
+        }
+      })
+    </script>
+  </body>
+</html>
