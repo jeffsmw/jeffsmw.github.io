@@ -3,9 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>Konami</title>
+    <link rel="stylesheet" href="konami.css" type="text/css">
   </head>
   <body>
-    <h1>up up down down left right left right B A<h1>
+    <div>
+      &#8679; &#8679; &#8681; &#8681; &#8678; &#8680; &#8678; &#8680; B A
+    </div>
 
     <script>
       const pressed = [];
@@ -15,7 +18,7 @@
         pressed.push(e.keyCode);
         pressed.splice(-konami.length/2 - 1, pressed.length - konami.length/2);
         if (pressed.join('').includes(konami)) {
-          alert('Konami!');
+          document.querySelector('div').className = "konami";
         }
       })
     </script>

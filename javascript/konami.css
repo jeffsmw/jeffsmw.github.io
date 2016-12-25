@@ -1,0 +1,15 @@
+body {
+  font-family: Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  font-weight: 600;
+  height: 100vh;
+  margin: 0;
+}
+
+.konami {
+  text-shadow: 0px 0px 5px orange;
+  font-size: 100px;
+}
